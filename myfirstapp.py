@@ -4,7 +4,19 @@ import numpy as np
 import pandas as pd
 import time
 
-st.header("My first Streamlit App")
+st.header("My first Python Web App")
+
+readme = st.checkbox("readme first")
+
+if readme:
+
+    st.write("""
+        This is a web app demo using [streamlit](https://streamlit.io/) library. It is hosted in [heroku](https://www.heroku.com/). You may get the codes via [github](https://github.com/richieyuyongpoh/myfirstapp)
+        """)
+
+    st.write ("For more info, please contact:")
+
+    st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
 
 option = st.sidebar.selectbox(
     'Select a mini project',
